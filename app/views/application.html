@@ -11,18 +11,12 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
+    <a href="/" class="govuk-back-link">Back</a>
+
     <h1 class="govuk-heading-xl">
     {{application.fullName}}
     </h1>
     <dl class="govuk-summary-list">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Name
-          </dt>
-          <dd class="govuk-summary-list__value">
-            {{application.fullName}}
-          </dd>
-        </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             ID
@@ -36,9 +30,9 @@
             Address
           </dt>
           <dd class="govuk-summary-list__value">
-            {{application.address.firstLine}}<p>
-             {{application.address.town}}<p>
-            {{application.address.postCode}}
+            <p>{{application.address.firstLine}}</p>
+            <p>{{application.address.town}}</p>
+            <p>{{application.address.postCode}}</p>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -46,8 +40,13 @@
             Vehicle Length 
           </dt>
           <dd class="govuk-summary-list__value">
-            <p class="govuk-body" >{{application.vehicleLength.isLonger}}</p>
-
+            <!-- is the vehicle isLonger? true, then show metres -->
+            {% if application.vehicleLength.isLonger %}
+              <p>{{application.vehicleLength.meters}}</p>
+            {% else %}
+              <p>Less than 18.65</p>
+            {% endif %}
+            <!-- if no then say less than 18.5 -->
           </dd>
         </div>
       </dl>

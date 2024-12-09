@@ -3,7 +3,7 @@ module.exports = {
   "applications": [
   {
     "id": 12892,
-    "fullName": "Emma Frith",
+    "fullName": "Harry Potter",
     "address": {
       "firstLine": "22 shoredith road",
       "town": "London",
@@ -13,8 +13,8 @@ module.exports = {
     "vehicleReg": "LR24 DVC",
     "vehicleDescription": "Black Toyota",
     "vehicleLength": {
-      "isLonger": true,
-      "meters": 19.3
+      "isLonger": false,
+      "meters": 12.3
     },
     "vehicleAttributes": {
       "livingAccomodation": true,
@@ -29,7 +29,7 @@ module.exports = {
   },
   {
     "id": 38490,
-    "fullName": "Emma Frith",
+    "fullName": "Hermione Granger",
     "address": {
       "firstLine": "22 shoredith road",
       "town": "London",
@@ -55,7 +55,7 @@ module.exports = {
   },
   {
     "id": 84920,
-    "fullName": "Emma Frith",
+    "fullName": "Bella Trix",
     "address": {
       "firstLine": "22 shoredith road",
       "town": "London",
