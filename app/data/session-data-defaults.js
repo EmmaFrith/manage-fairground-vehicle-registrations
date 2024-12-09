@@ -218,7 +218,7 @@ module.exports = {
     "substantiallyModified": true,
   },
   {
-    "status": "approve",
+    "status": "awaiting approval",
     "id": 12320,
     "fullName": "Ginny Weasley",
     "address": {
