@@ -40,13 +40,11 @@
             Vehicle Length 
           </dt>
           <dd class="govuk-summary-list__value">
-            <!-- is the vehicle isLonger? true, then show metres -->
             {% if application.vehicleLength.isLonger %}
               <p>{{application.vehicleLength.meters}}</p>
             {% else %}
               <p>Less than 18.65</p>
             {% endif %}
-            <!-- if no then say less than 18.5 -->
           </dd>
         </div>
       </dl>
