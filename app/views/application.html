@@ -1,0 +1,57 @@
+{% extends "layouts/main.html" %}
+
+{% from 'components/cards/macro.njk' import card %}
+
+{% set serviceName="Applications" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+    {{application.fullName}}
+    </h1>
+    <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{application.fullName}}
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            ID
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{application.id}}
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{application.address.firstLine}}<p>
+             {{application.address.town}}<p>
+            {{application.address.postCode}}
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Vehicle Length 
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body" >{{application.vehicleLength.isLonger}}</p>
+
+          </dd>
+        </div>
+      </dl>
+  </div>
+</div>
+
+{% endblock %}
