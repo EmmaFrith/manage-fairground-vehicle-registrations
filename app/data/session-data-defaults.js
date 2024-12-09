@@ -1,7 +1,8 @@
 module.exports = {
 
   "applications": [
-  {
+  { 
+    "status": "approved",
     "id": 12892,
     "fullName": "Harry Potter",
     "address": {
@@ -28,6 +29,7 @@ module.exports = {
     "substantiallyModified": true,
   },
   {
+    "status": "not approved",
     "id": 38490,
     "fullName": "Hermione Granger",
     "address": {
@@ -54,6 +56,7 @@ module.exports = {
     "substantiallyModified": true,
   },
   {
+    "status": "approved",
     "id": 84920,
     "fullName": "Bella Trix",
     "address": {
@@ -80,8 +83,9 @@ module.exports = {
     "substantiallyModified": true,
   },
   {
+    "status": "not approved",
     "id": 12892,
-    "fullName": "Emma Frith",
+    "fullName": "Severus Snape",
     "address": {
       "firstLine": "22 shoredith road",
       "town": "London",
@@ -106,8 +110,9 @@ module.exports = {
     "substantiallyModified": true,
   },
   {
+    "status": "awaiting approval",
     "id": 38790,
-    "fullName": "Emma Frith",
+    "fullName": "Ron Weasley",
     "address": {
       "firstLine": "22 shoredith road",
       "town": "London",
@@ -132,8 +137,9 @@ module.exports = {
     "substantiallyModified": true,
   },
   {
+    "status": "awaiting approval",
     "id": 287320,
-    "fullName": "Emma Frith",
+    "fullName": "Albus Dumbledor",
     "address": {
       "firstLine": "22 shoredith road",
       "town": "London",
@@ -158,8 +164,9 @@ module.exports = {
     "substantiallyModified": true,
   },
   {
+    "status": "not approved",
     "id": 12892,
-    "fullName": "Emma Frith",
+    "fullName": "Sirius Black",
     "address": {
       "firstLine": "22 shoredith road",
       "town": "London",
@@ -184,8 +191,9 @@ module.exports = {
     "substantiallyModified": true,
   },
   {
+    "status": "approved",
     "id": 56490,
-    "fullName": "Emma Frith",
+    "fullName": "Hagrid",
     "address": {
       "firstLine": "22 shoredith road",
       "town": "London",
@@ -210,8 +218,9 @@ module.exports = {
     "substantiallyModified": true,
   },
   {
+    "status": "approve",
     "id": 12320,
-    "fullName": "Emma Frith",
+    "fullName": "Ginny Weasley",
     "address": {
       "firstLine": "22 shoredith road",
       "town": "London",
