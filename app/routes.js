@@ -17,7 +17,19 @@ router.get('/', (req, res) => {
          filterStatus.includes(application.status)
       )
    }
-
+   applications.sort((a, b) => {
+    const submittedA = a.submittedAt; // ignore upper and lowercase
+    const submittedB = b.submittedAt; // ignore upper and lowercase
+    if (submittedA < submittedB) {
+      return -1;
+    }
+    if (submittedA > submittedB) {
+      return 1;
+    }
+  
+    // names must be equal
+    return 0;
+  });
    res.render('index.html', {
       applications
    })
