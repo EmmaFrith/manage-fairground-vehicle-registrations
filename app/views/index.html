@@ -23,19 +23,19 @@
       </legend>
       <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
         <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+          <input class="govuk-checkboxes__input" id="organisation" name="filterStatus" type="checkbox" value="approved">
           <label class="govuk-label govuk-checkboxes__label" for="organisation">
             Approved
           </label>
         </div>
         <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+          <input class="govuk-checkboxes__input" id="organisation-2" name="filterStatus" type="checkbox" value="not approved">
           <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
             Not approved
           </label>
         </div>
         <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+          <input class="govuk-checkboxes__input" id="organisation-3" name="filterStatus" type="checkbox" value="awaiting approval">
           <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
             Awaiting decision
           </label>
@@ -57,7 +57,7 @@
       {{ serviceName }}
     </h1>
 
-    {% for application in data.applications%}
+    {% for application in applications%}
 
       {{ card(application) }}
     

@@ -6,6 +6,23 @@
 const govukPrototypeKit = require('govuk-prototype-kit')
 const router = govukPrototypeKit.requests.setupRouter()
 
+router.get('/', (req, res) => {
+   let applications = req.session.data.applications;
+   const filterStatus = req.query.filterStatus;
+   console.log("filter status")
+   console.log(filterStatus)
+   if (filterStatus) {
+   console.log('filtering')
+   applications = applications.filter((application) =>
+         filterStatus.includes(application.status)
+      )
+   }
+
+   res.render('index.html', {
+      applications
+   })
+})
+
 router.get('/applications/:id', (req, res) => {
      const id = req.params.id 
      const applications = req.session.data.applications;
