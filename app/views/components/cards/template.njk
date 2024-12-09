@@ -1,11 +1,5 @@
 <div class="app-card" >
-    <h2 class="govuk-heading-m">Full name</h2>
-    <p class="govuk-body">{{ params.fullName }}</p>
-    <h2 class="govuk-heading-s">Vehicle reg</h2>
-    <p class="govuk-body">{{ params.vehicleReg }}</p>
-     <h2 class="govuk-heading-s">Status</h2>
-
-     {% if params.status == "approved" %}
+    {% if params.status == "approved" %}
          <strong class="govuk-tag govuk-tag--green">
           Approved
         </strong>
@@ -18,6 +12,14 @@
           Awaiting decision
         </strong>
      {% endif %}
+
+    <p> </p>
+    <h2 class="govuk-heading-m">Full name</h2>
+    <p class="govuk-body">{{ params.fullName }}</p>
+    <h2 class="govuk-heading-s">Vehicle reg</h2>
+    <p class="govuk-body">{{ params.vehicleReg }}</p>
+     
+
      <p> </p>
        <p><a href="/applications/{{ params.id }}">View</a></p>
 
